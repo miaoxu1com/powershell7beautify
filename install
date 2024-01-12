@@ -1,4 +1,4 @@
-安装scoop-cn
+安装scoop-cn 安装过程中带url的都可以下载到本地安装
 scoop install PSReadLine
 scoop install posh-git
 scoop install oh-my-posh
