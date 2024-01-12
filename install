@@ -18,8 +18,18 @@ notepad $PROFILE
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/jandedobbeleer.omp.json" | Invoke-Expression
 . $PROFILE
 
+ListView
+https://devblogs.microsoft.com/powershell/announcing-psreadline-2-1-with-predictive-intellisense/
+
+# Install-Module安装是从微软PSGallery站点下载叫做Module
+# extensions vs插件是从https://marketplace.visualstudio.com/ 下载
+# nuget是从https://www.nuget.org/ 站点下载
+# jetbrains plugins是从https://plugins.jetbrains.com/ 站点下载
 
 #-------------------------------  Set Hot-keys BEGIN  -------------------------------
+命令历史ListView
+Set-PSReadLineOption -PredictionViewStyle ListView
+
 # 设置预测文本来源为历史记录
 Set-PSReadLineOption -PredictionSource History
 
